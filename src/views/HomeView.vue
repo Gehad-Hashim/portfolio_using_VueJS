@@ -73,17 +73,20 @@
         </v-row>
       </v-container>
     </v-container>
+
+<Footer/>
+
   </v-app>
 </template>
 
 <script>
 import { defineComponent } from "vue";
 import NavBar from "@/components/navbar.vue";
-
+import Footer from "@/components/footer.vue"
 export default defineComponent({
   name: "HomeView",
   components: {
-    NavBar
+    NavBar,Footer
   },
   data() {
     return {
@@ -92,7 +95,6 @@ export default defineComponent({
         "skills/CSS3.svg",
         "skills/JS.webp",
         "skills/typescript.png",
-        "deep-purple accent-4"
       ],
 
 
