@@ -44,21 +44,21 @@
       </div>
 
       <v-container id="skills">
-        <h1 class="text-center mt-10" style="font-size:70px">Skills</h1>
-        <v-row class="d-flex justify-content-center">
-          <v-col cols="12" class="mt-6">
-            <v-carousel cycle  :show-arrows="false" width="100%"  height="300" hide-delimiters >
-              <v-carousel-item class="mt-10" v-for=" i in skills" :key="i">
-                <v-img :src="i"></v-img>
-              </v-carousel-item>
-            </v-carousel>
-          
-          </v-col>
-        </v-row>
+        <h1 class="text-center mt-10 " style="font-size:45px">Skills</h1>
+        <v-container>
+          <v-row class="d-flex justify-content-center">
+            <v-col cols="6" class="mt-6">
+              <Skills :skills="front_skills" title="front"></Skills>
+            </v-col>
+            <v-col cols="6" class="mt-6">
+              <Skills :skills="back_skills" title="back"></Skills>
+            </v-col>
+          </v-row>
+        </v-container>
       </v-container>
 
       <v-container id="about">
-        <h1 class="text-center mt-10" style="font-size:50px">About me</h1>
+        <h1 class="text-center mt-10" style="font-size:55px">About me</h1>
         <v-row class="d-flex justify-content-center">
           <v-col cols="12" class="mt-6 text-start">
             <h4 class="mt-n4">I am a Creative full stack web developer</h4>
@@ -74,40 +74,39 @@
       </v-container>
     </v-container>
 
-<Footer/>
-
+    <Footer />
   </v-app>
 </template>
 
 <script>
 import { defineComponent } from "vue";
 import NavBar from "@/components/navbar.vue";
-import Footer from "@/components/footer.vue"
+import Footer from "@/components/footer.vue";
+import Skills from "@/components/skills.vue";
 export default defineComponent({
   name: "HomeView",
   components: {
-    NavBar,Footer
+    NavBar,
+    Footer,
+    Skills
   },
   data() {
     return {
-      skills: [
+      front_skills: [
         "skills/HTML5.png",
         "skills/CSS3.svg",
         "skills/JS.webp",
-        "skills/typescript.png",
+        "skills/typescript.png"
       ],
-
-
-
-
-
-
-
-      
-    }
+      back_skills: [
+        "skills/HTML5.png",
+        "skills/CSS3.svg",
+        "skills/JS.webp",
+        "skills/typescript.png"
+      ]
+    };
   }
-  });
-
+});
 </script>
 
 <style scoped>
