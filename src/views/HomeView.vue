@@ -54,6 +54,13 @@
               <Skills :skills="back_skills" title="back"></Skills>
             </v-col>
           </v-row>
+
+          <v-row class="mx-5 " >
+            <v-col cols="6"  md="12" class=" mt-6 " >
+              <Skills :skills="db_skills" title="Database"></Skills>
+            </v-col>
+          </v-row>
+
         </v-container>
       </v-container>
 
@@ -99,6 +106,12 @@ export default defineComponent({
         "skills/typescript.png"
       ],
       back_skills: [
+        "skills/HTML5.png",
+        "skills/CSS3.svg",
+        "skills/JS.webp",
+        "skills/typescript.png"
+      ],
+      db_skills: [
         "skills/HTML5.png",
         "skills/CSS3.svg",
         "skills/JS.webp",
