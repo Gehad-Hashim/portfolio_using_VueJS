@@ -112,10 +112,8 @@ export default defineComponent({
         "skills/back/Python.png"
       ],
       db_skills: [
-        "skills/db/HTML5.png",
-        "skills/db/CSS3.svg",
-        "skills/db/JS.webp",
-        "skills/db/typescript.png"
+        "skills/db/mysql.png",
+        "skills/db/MongoDB-Logo.png",
       ]
     };
   }
