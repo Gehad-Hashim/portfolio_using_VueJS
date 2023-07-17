@@ -100,22 +100,22 @@ export default defineComponent({
   data() {
     return {
       front_skills: [
-        "skills/HTML5.png",
-        "skills/CSS3.svg",
-        "skills/JS.webp",
-        "skills/typescript.png"
+        "skills/front/HTML5.png",
+        "skills/front/CSS3.svg",
+        "skills/front/JS.webp",
+        "skills/front/typescript.png"
       ],
       back_skills: [
-        "skills/HTML5.png",
-        "skills/CSS3.svg",
-        "skills/JS.webp",
-        "skills/typescript.png"
+        "skills/back/laravell.png",
+        "skills/back/php.png",
+        "skills/back/nodejs.png",
+        "skills/back/Python.png"
       ],
       db_skills: [
-        "skills/HTML5.png",
-        "skills/CSS3.svg",
-        "skills/JS.webp",
-        "skills/typescript.png"
+        "skills/db/HTML5.png",
+        "skills/db/CSS3.svg",
+        "skills/db/JS.webp",
+        "skills/db/typescript.png"
       ]
     };
   }
