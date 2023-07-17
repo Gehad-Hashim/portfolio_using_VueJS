@@ -103,7 +103,9 @@ export default defineComponent({
         "skills/front/HTML5.png",
         "skills/front/CSS3.svg",
         "skills/front/JS.webp",
-        "skills/front/typescript.png"
+        "skills/front/typescript.png",
+        "skills/front/React_logo.png",
+        "skills/front/vuejs.png"
       ],
       back_skills: [
         "skills/back/laravell.png",
